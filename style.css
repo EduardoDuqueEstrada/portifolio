@@ -1,0 +1,202 @@
+*{box-sizing: border-box;}
+body {
+    background-color: rgb(138, 138, 138);
+    font-family: "JetBrains Mono", monospace;
+    height: 100%; 
+    margin: 0;
+}
+
+.body.darkmode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.switch {
+    right: 0;
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+#menu{
+    display: flex;
+    position: fixed;
+    width: 50%;
+    height: 7vh;
+}
+#buttonMenu{
+    font-family: "JetBrains Mono", monospace;
+    padding-left: 5vh;
+    font-size: 125%;
+    color: rgb(0, 0, 0);
+    border: 0;
+    transition: 0.35s;
+}
+#buttonMenu:hover{
+    font: bold;
+    font-size: 140%;
+}
+
+#laele {
+    background-image: url('image 1.png');
+    background-size:cover ;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 5vh;
+    width: 60%;
+    width: 100%;
+    font-size: 200%;
+    background-color: transparent;
+    text-align: center; 
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    padding-top: 15vh;
+}
+#sobremim{
+    text-decoration: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size:  100%;
+    border-color: rgb(211, 66, 66);
+    background-color: transparent;
+    width: 35%;
+    margin-top: -50vh;
+    height: 7vh;
+}
+
+#imagem-fundo{
+    height:172vh;
+    background-image: url(fundo.png);
+    background-size: cover;
+}
+
+
+#about{
+    padding-top: 10vh;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    text-align: left;
+    background-color: transparent;
+}
+#about p{
+    font-size: 150%;
+    padding-top: 5vh;
+}
+#about b{
+    font-size: 175%;
+}
+
+#foto{
+    background-image: url(image\ 1.png);
+    background-color: black;
+    background-size: cover;
+    border-radius: 100%;
+    height: 50vh;
+    width: 50vh;
+}
+#projetos{
+    background-color: rgba(255, 0, 0, 0.363);
+    width: 100%;
+}
+#pj{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#proj{
+    background: center;
+    width: 100%;
+    height: 75vh;
+}
+#links{
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+}
+#contato{
+    font-size: 125%;
+    padding-top: 5vh;
+    height: 15vh;
+    display: grid;
+    grid-template-rows: 50%;
+    grid-template-columns: 35% 30% 35%;
+    text-align: center;
+}
+#contato i{
+    font-size: 150%;
+}
+.a{
+    font-size: 200%;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 50%;
+    }
+    #laele{
+        font-size: 300%;
+    }
+    #menu{
+        font-size: 140%;
+    }#foto{
+        height: 20vh;
+    width: 20vh;
+    }
+  }
